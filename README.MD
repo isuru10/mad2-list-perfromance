@@ -19,8 +19,8 @@
 # Step 2. Implement List Performance Components
 
 1.  Create the **`ProductItem`** Composable accepting a `product: Product`.
-2.  Implement a `Row` layout inside this Composable to display the product ID, name, and price. Use a specific blue color for the ID text and set background/padding/shapes as per the final code.
-3.  Create the **`ProductListScreen`** Composable accepting a list of `products` and an **`onMove`** lambda: `(Int, Boolean) -> Unit`.
+2.  Implement a `Row` layout inside this Composable to display the product ID, name, and price. Use a specific blue color for the ID text and set background/padding/shapes.
+3.  Create the **`ProductListScreen`** Composable accepting a list of `products` and an **`onMove`** lambda: `(Int, Boolean) -> Unit` to move items in the list.
 4.  Add **`Text`** and **`Row`** containing two **`Button`** components to the screen, which call the `onMove` lambda to demonstrate item movement.
 5.  Implement the **`LazyColumn`** that displays the list of products.
 6.  Crucially, use the overloaded `items` function and provide the **`key`** lambda: **`key = { it.id }`**.
