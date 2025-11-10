@@ -32,8 +32,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.listperformance.ui.theme.ListPerformanceTheme
@@ -133,9 +131,7 @@ fun ProductItem(product: Product) {
 
 @Composable
 fun ListPerformanceDemoApp() {
-    var currentUserId by remember { mutableStateOf(101) }
     var listKey by remember { mutableStateOf(0) }
-    var isListenerActive by remember { mutableStateOf(true) }
 
     // Manage a mutable list for the LazyColumn demo
     var products by remember { mutableStateOf(getSampleProducts()) }
